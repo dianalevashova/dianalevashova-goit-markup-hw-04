@@ -262,7 +262,7 @@ img {
   padding: 0 15px;
   /*outline: 1px solid blue;*/
 }
-.section {
+.section:not(.hero) {
   padding: 120px 0;
 }
 .visually-hidden {
