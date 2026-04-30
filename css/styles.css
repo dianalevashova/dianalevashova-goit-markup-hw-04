@@ -32,6 +32,7 @@ img {
    LOGO
   ..............*/
 .logo {
+  margin-right: 76px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -44,8 +45,8 @@ img {
   color: #2e2f42;
 }
 .logo-footer {
-  display: block;
-  margin-bottom: 18px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer-span {
   color: #f4f4fd;
@@ -70,13 +71,13 @@ header .container {
 .nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .nav-list {
   display: flex;
   gap: 40px;
 }
 .nav-link {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -117,6 +118,7 @@ header .container {
   background-color: #2e2f42;
 }
 .hero-title {
+  max-width: 496px;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 56px;
@@ -131,6 +133,10 @@ header .container {
   align-items: center;
 }
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   padding: 16px 32px;
   border-radius: 4px;
   font-weight: 500;
@@ -172,6 +178,10 @@ header .container {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.team-name,
+.team-position {
+  text-align: center;
+}
 .features-item {
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -205,6 +215,7 @@ header .container {
 }
 .team-info {
   padding: 32px 16px;
+  text-align: center;
 }
 
 /* ..............
@@ -213,9 +224,11 @@ header .container {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-info {
+  border-top: none;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -244,9 +257,9 @@ header .container {
    LAYOUT UTILITIES
   .............. */
 .container {
-  max-width: 1440px;
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 156px;
+  padding: 0 15px;
   /*outline: 1px solid blue;*/
 }
 .section {
